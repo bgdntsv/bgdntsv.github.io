@@ -1,0 +1,42 @@
+body{
+	background-color: #E1E1E1;
+	text-align: center;
+}
+.form{
+	margin:25px auto;
+	display: inline-block;
+	width: 321px;
+	height: 370px;
+	background-color: white;
+}
+.create{
+	margin-top:-4px;
+	margin-left: 30px;
+	margin-bottom: 15px;
+	height: 25px;
+	width: 150px;
+	font-size: 13px;
+	color: white;
+	padding: 2px;
+	background-color: #01b3b3;
+}
+p{
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 18px;
+	font-size: 10px;
+	font-weight: 900;
+}
+input{
+	display: block;
+	height: 30px;
+	width: 260px;
+	margin-left: 30px;
+	padding: 11px;
+	font-size: 9px;
+	background-color: #ebf4f4;
+	border: 1px solid #cfdede;
+}
+button{
+	margin-top: 34px;
+}
