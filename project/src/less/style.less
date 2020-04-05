@@ -407,6 +407,7 @@ section{
 	z-index: 9;
 	background-color:rgba(0, 0, 0, 0.5);
 	&-content{
+		text-align: center;
 		position:fixed;
 		top: 10%;
 		background-color:@light;
@@ -435,6 +436,9 @@ section{
 	}
 	&-header{
 		.bold();
+	}
+	&-btn{
+		width: 100%;
 	}
 }
 
@@ -512,6 +516,14 @@ section{
 			right: 0;
 		}
 	}
+	.popup{
+		&-content{
+			padding: 1rem 1.5rem;
+		}
+		&-btn{
+			width: auto;
+		}
+	}
 }
 @media(max-width: 576px){
 	.button{
@@ -543,5 +555,13 @@ section{
 	}
 	.fotorama{
 		width: 100%;
+	}
+	.popup{
+		&-content{
+			padding: 1rem 1.5rem;
+		}
+	}
+	.form-btn{
+		margin: 1rem auto;
 	}
 }

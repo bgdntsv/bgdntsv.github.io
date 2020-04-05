@@ -373,6 +373,7 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .popup-content {
+  text-align: center;
   position: fixed;
   top: 10%;
   background-color: #ffffff;
@@ -403,6 +404,9 @@ section {
 }
 .popup-header {
   font-family: 'ProximaNova_bold', sans-serif;
+}
+.popup-btn {
+  width: 100%;
 }
 @media (max-width: 1199px) {
   .feedback-form {
@@ -469,6 +473,12 @@ section {
   .feedback-next-btn {
     right: 0;
   }
+  .popup-content {
+    padding: 1rem 1.5rem;
+  }
+  .popup-btn {
+    width: auto;
+  }
 }
 @media (max-width: 576px) {
   .button {
@@ -496,5 +506,11 @@ section {
   }
   .fotorama {
     width: 100%;
+  }
+  .popup-content {
+    padding: 1rem 1.5rem;
+  }
+  .form-btn {
+    margin: 1rem auto;
   }
 }
