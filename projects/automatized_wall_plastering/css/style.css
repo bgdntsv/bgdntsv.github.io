@@ -590,14 +590,15 @@ footer strong {
 .footer-logo {
   text-align: right;
 }
-.footer-logo img {
-  width: 100%;
-}
+
 .footer-logo p {
   text-decoration: none;
 }
+.footer-logo1{
+  text-align: center;
+}
 .footer-logo1 img {
-  width: 110%;
+  width: 80%;
 }
 .popup {
   display: none;

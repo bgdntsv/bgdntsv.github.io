@@ -1,2 +1,2 @@
 # bgdntsv.github.io
-studing
+Hello, i'm Artem and it's my portfolio
