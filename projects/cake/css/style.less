@@ -175,12 +175,7 @@ section{
     .text{
       position: relative;
       width: 50%;
-      h3{
-        margin-top: 0;
-        text-align: center;
-        font-size: 36px;
-        font-family: "MontserratBold", serif;
-      }
+
       ul{
         margin: 2rem;
         li{
@@ -203,68 +198,6 @@ section{
         }
       }
     }
-  }
-}
-.about{
-  background: rgba(205, 25, 46, 0.03);
-  padding: 3rem 0 4rem;
-  position: relative;
-  .title{
-    margin-top: 3rem;
-  }
-  .table{
-    padding: 0 8rem;
-    display: flex;
-    .about-column{
-      margin: 0 auto;
-      width: 50%;
-      padding: 0 6rem;
-      h3{
-        font-family: "MontserratBold", serif;
-        font-size: 36px;
-      }
-      ul{
-        padding-left: 1rem;
-        li{
-          font-family: "MontserratLight", serif;
-          padding-left: 1.5rem;
-          margin-bottom: 2rem;
-          font-size: 20px;
-          span{
-            opacity: 0.3;
-          }
-          &::marker{
-            font-size: 1.8rem;
-          }
-        }
-      }
-      .table-item{
-        display: flex;
-        .values{
-          ul{
-            li{
-              list-style: none;
-              margin-left: 1rem;
-              margin-bottom: 2rem;
-              font-family: "MontserratBold", serif;
-              height: 28px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .button{
-    background-color: transparent;
-    border: rgba(205, 25, 46, 0.3) solid 1px;
-    color: @color-btn;
-    display: block;
-    margin: 1rem auto 0;
-  }
-  .number{
-    bottom: 7px;
-    right: 7%;
-
   }
 }
 .price-item{
@@ -355,6 +288,7 @@ section{
     justify-content: center;
     padding-bottom: 8rem;
     img{
+      height: 100%;
       width: 20%;
       padding: 2rem 4rem;
     }
@@ -486,6 +420,10 @@ footer{
 }
 //FORMS
 .form{
+  .button{
+    max-width: 290px;
+    margin: 1rem;
+  }
   position: fixed;
   top: 0;
   width: 100%;
@@ -577,7 +515,7 @@ footer{
     h2{
       font-size: 64px;
       font-family: "MontserratBold", serif;
-      line-height: 0px;
+      line-height: 0;
     }
     p{
       font-family: "MontserratLight", serif;
@@ -611,16 +549,9 @@ footer{
       margin: 3rem 0;
     }
   }
-  .about{
-    padding: 0 0 4rem;
-  }
   section{
     .part{
       .text{
-        h3{
-          margin-bottom: 1rem;
-          font-size: 30px;
-        }
         ul{
           margin-top: 0;
           li{
@@ -634,20 +565,7 @@ footer{
       }
     }
   }
-  .about{
-    .table{
-      .about-column{
-        padding: 0 3rem;
-        ul{
-          li{
-            &::marker{
-              font-size: 1.4rem;
-            }
-          }
-        }
-      }
-    }
-  }
+
   .price-item{
     .price-text{
       h3{
@@ -701,6 +619,13 @@ footer{
     margin-top: 6rem;
     .icons{
       padding-bottom: 2rem;
+    }
+  }
+  .form{
+    .thanks-form{
+      h2{
+        font-size: 40px;
+      }
     }
   }
 }
