@@ -159,7 +159,7 @@ header{
     .img{
       width: 45%;
       height: 100%;
-      background: no-repeat center center/cover url("../img/header.png") ;
+      background: no-repeat center center/cover url("../img/header.jpg") ;
     }
   }
 }
@@ -237,6 +237,10 @@ section{
         width: 50%;
         border-right: 1px solid rgba(205, 25, 46, 0.3);
         .buttons{
+          display: -webkit-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -ms-flex;
           display: flex;
           margin-top: 1rem;
           justify-content: center;
@@ -622,9 +626,27 @@ footer{
     }
   }
   .form{
+    .order-form{
+      width: 90%;
+      .top{
+        .inputs{
+          input{
+            width: 80%;
+            font-size: 25px;
+          }
+        }
+      }
+      .bottom{
+        font-size: 22px;
+      }
+    }
     .thanks-form{
+      width: 90%;
       h2{
         font-size: 40px;
+      }
+      p{
+        font-size: 22px;
       }
     }
   }

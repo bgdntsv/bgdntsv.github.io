@@ -5,7 +5,6 @@
     <title>Cake</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.png">
-    <link rel="preload">
 </head>
 <body>
 <header>
@@ -47,7 +46,7 @@
 <section>
     <h2 class="title">Our features</h2>
     <div id="1" class="part">
-        <img src="img/features1.png" alt="pie">
+        <img src="img/features1.jpg" alt="pie">
         <div class="text">
             <ul>
                 <li>The texture of our creamy cheesecake is a mixture of a custard,
@@ -74,13 +73,13 @@
             </ul>
             <div class="number number-right"><p>03</p></div>
         </div>
-        <img src="img/features2.png" alt="pie">
+        <img src="img/features2.jpg" alt="pie">
     </div>
 </section>
 <section>
     <h2 id="3" class="title">Price</h2>
     <div class="price-item">
-        <img src="img/price1.png" alt="cake">
+        <img src="img/price1.jpg" alt="cake">
         <div class="price-text">
             <h3>Classic <span>$65</span></h3>
             <ul>
@@ -128,18 +127,18 @@
             <button onclick="open_close1()" class="button">Buy</button>
             <div class="number"><p>04</p></div>
         </div>
-        <img src="img/price2.png" alt="cake">
+        <img src="img/price2.jpg" alt="cake">
     </div>
 </section>
 <section class="iconSection">
     <h2 class="title" id="4">Our crustless keto cheesecake is</h2>
     <div class="icons">
-        <img src="img/icons/1.png" alt="">
-        <img src="img/icons/2.png" alt="">
-        <img src="img/icons/3.png" alt="">
-        <img src="img/icons/4.png" alt="">
-        <img src="img/icons/5.png" alt="">
-        <img src="img/icons/6.png" alt="">
+        <img src="img/icons/1.jpg" alt="">
+        <img src="img/icons/2.jpg" alt="">
+        <img src="img/icons/3.jpg" alt="">
+        <img src="img/icons/4.jpg" alt="">
+        <img src="img/icons/5.jpg" alt="">
+        <img src="img/icons/6.jpg" alt="">
     </div>
     <div class="number"><p>05</p></div>
 </section>
@@ -168,7 +167,7 @@
             <a href="https://instagram.com/basque_burnt_keto_cheesecake?igshid=oqdjb86ug61k" target="_blank"><img
                     src="img/insta.png" alt=""></a>
             <div class="line"></div>
-            <a href="mailto:art23032001@gmail.com" target="_blank" rel="noopener noreferrer"><p>burntcake@icloud.com</p></a>
+            <a href="mailto:burntcake@icloud.com?subject=Cheesecak order" target="_blank" rel="noopener noreferrer"><p>burntcake@icloud.com</p></a>
         </div>
     </div>
     <div class="footer-gallery">
@@ -179,11 +178,14 @@
 <!--FORMS-->
 <div id="firstForm" class="form form-close">
     <div class="order-form">
-        <div class="top">
+        <form onsubmit="sendMessage(event)" class="top">
             <div class="inputs">
-                <input id="name" placeholder="Name" type="text">
-                <input id="email" placeholder="Email" type="text">
-                <input id="phoneNumber" placeholder="Phone number" type="text">
+                <label for="name"></label>
+                <input required id="name" placeholder="Name" type="text">
+                <label for="email"></label>
+                <input required id="email" placeholder="Email" type="text">
+                <label for="phoneNumber"></label>
+                <input required id="phoneNumber" placeholder="Phone number" type="text">
             </div>
             <div class="data">
                 <div class="count">
@@ -192,9 +194,9 @@
                 <div class="total">
                     <p>Total</p><span id="totalForm"></span>
                 </div>
-                <button onclick="open_close2(); open_close1()" class="button">Buy</button>
+                <input type="submit" class="button" value="Buy">
             </div>
-        </div>
+        </form>
         <p class="bottom">You will receive an email about your order.<br>Our manager will contact you and clarify the
             details of the order</p>
         <button onclick="open_close1()" class="close">&times;</button>
@@ -253,6 +255,22 @@
             priceTwo.innerText = `$${sessionStorage.priceTwo}`
             sessionStorage.countTwo < 10 ? countTwo.innerText = `0${sessionStorage.countTwo}` : countTwo.innerText = `${sessionStorage.countTwo}`
         }
+    }
+    let name = document.getElementById('name')
+    let email = document.getElementById('email')
+    let phoneNumber = document.getElementById('phoneNumber')
+    const sendMessage = (event) =>{
+        event.preventDefault()
+        let countClassic = sessionStorage.countOne
+        let countBerries = sessionStorage.countTwo
+        document.location.href = `mailto:burntcake@icloud.com?subject=Cheesecak%20order&body=
+        Name:%20${name.value}%0D%0A
+        Email:%20${email.value}%0D%0A
+        Phone number:%20${phoneNumber.value}%0D%0A
+        Classic:%20${countClassic}%20count%0D%0A
+        With%20organic%20Berries:%20${countBerries}%20count%0D%0A%0D%0A`
+        open_close1()
+        open_close2()
     }
 </script>
 <script>

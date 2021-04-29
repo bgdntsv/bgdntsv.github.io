@@ -155,7 +155,7 @@ header .banner .text .number p {
 header .banner .img {
   width: 45%;
   height: 100%;
-  background: no-repeat center center / cover url("../img/header.png");
+  background: no-repeat center center / cover url("../img/header.jpg");
 }
 section {
   margin-top: 3rem;
@@ -234,6 +234,10 @@ section .part .text .number-right p {
   border-right: 1px solid rgba(205, 25, 46, 0.3);
 }
 .price-item .price-text .price-calc .count .buttons {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
   margin-top: 1rem;
   justify-content: center;
@@ -585,8 +589,24 @@ footer .button {
   .iconSection .icons {
     padding-bottom: 2rem;
   }
+  .form .order-form {
+    width: 90%;
+  }
+  .form .order-form .top .inputs input {
+    width: 80%;
+    font-size: 25px;
+  }
+  .form .order-form .bottom {
+    font-size: 22px;
+  }
+  .form .thanks-form {
+    width: 90%;
+  }
   .form .thanks-form h2 {
     font-size: 40px;
+  }
+  .form .thanks-form p {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
