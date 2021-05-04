@@ -234,28 +234,31 @@ section .part .text .number-right p {
   border-right: 1px solid rgba(205, 25, 46, 0.3);
 }
 .price-item .price-text .price-calc .count .buttons {
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
+  position: relative;
   margin-top: 1rem;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .price-item .price-text .price-calc .count .buttons button {
+  position: absolute;
   background-color: transparent;
-  height: 20px;
+  height: 50px;
   line-height: 0;
 }
 .price-item .price-text .price-calc .count .buttons .minus {
+  left: 10%;
   transform: translateY(-0.4rem);
   font-size: 90px;
 }
 .price-item .price-text .price-calc .count .buttons .plus {
+  right: 10%;
   font-size: 72px;
 }
 .price-item .price-text .price-calc .count .buttons p {
+  position: absolute;
+  left: 45%;
+  transform: translateX(-60%);
   font-family: "Montserrat", sans-serif;
   margin: 0 1.5rem;
   font-size: 48px;
@@ -560,6 +563,9 @@ footer .button {
   }
   .price-item .price-text .price-calc {
     margin-top: 1rem;
+  }
+  .price-item .price-text .price-calc .count .buttons p {
+    left: 43%;
   }
   .gallery .slick-slider .slick-center {
     transform: scale(1.18);
