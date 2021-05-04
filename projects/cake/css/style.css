@@ -236,8 +236,6 @@ section .part .text .number-right p {
 .price-item .price-text .price-calc .count .buttons {
   position: relative;
   margin-top: 1rem;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 .price-item .price-text .price-calc .count .buttons button {
