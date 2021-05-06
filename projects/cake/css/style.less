@@ -237,28 +237,26 @@ section{
         width: 50%;
         border-right: 1px solid rgba(205, 25, 46, 0.3);
         .buttons{
-          position: relative;
+          display: flex;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: -ms-flex;
+          justify-content: center;
+          align-items: center;
           margin-top: 1rem;
-          text-align: center;
           button{
-            position: absolute;
             background-color: transparent;
             height: 50px;
             line-height: 0;
           }
           .minus{
-            left: 10%;
             transform: translateY(-0.4rem);
             font-size: 90px;
           }
           .plus{
-            right: 10%;
             font-size: 72px;
           }
           p{
-            position: absolute;
-            left: 45%;
-            transform: translateX(-60%);
             font-family: "Montserrat", sans-serif;
             margin: 0 1.5rem;
             font-size: 48px;
@@ -451,7 +449,7 @@ footer{
     }
     .top{
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       width: 100%;
       .inputs{
@@ -472,6 +470,7 @@ footer{
         }
       }
       .data{
+        width: 40%;
         p{
           font-family: "MontserratBold", serif;
           font-size: 36px;

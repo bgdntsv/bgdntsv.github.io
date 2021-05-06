@@ -234,29 +234,27 @@ section .part .text .number-right p {
   border-right: 1px solid rgba(205, 25, 46, 0.3);
 }
 .price-item .price-text .price-calc .count .buttons {
-  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 1rem;
-  text-align: center;
 }
 .price-item .price-text .price-calc .count .buttons button {
-  position: absolute;
   background-color: transparent;
   height: 50px;
   line-height: 0;
 }
 .price-item .price-text .price-calc .count .buttons .minus {
-  left: 10%;
   transform: translateY(-0.4rem);
   font-size: 90px;
 }
 .price-item .price-text .price-calc .count .buttons .plus {
-  right: 10%;
   font-size: 72px;
 }
 .price-item .price-text .price-calc .count .buttons p {
-  position: absolute;
-  left: 45%;
-  transform: translateX(-60%);
   font-family: "Montserrat", sans-serif;
   margin: 0 1.5rem;
   font-size: 48px;
@@ -452,7 +450,7 @@ footer .button {
 }
 .form .order-form .top {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
@@ -472,6 +470,9 @@ footer .button {
   padding-bottom: 0.5rem;
   opacity: 0.7;
   outline: none;
+}
+.form .order-form .top .data {
+  width: 40%;
 }
 .form .order-form .top .data p {
   font-family: "MontserratBold", serif;
