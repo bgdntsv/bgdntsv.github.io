@@ -1290,13 +1290,11 @@ section
   font-size: 1rem;
 }
 .form label {
-
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
-  background-color: transparent;
+  background-color: white;
   padding: 0.5rem;
   font-size: 1rem;
-  width: 100%;
   left: 50%;
 }
 .form-btn {
