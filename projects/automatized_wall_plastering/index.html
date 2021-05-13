@@ -13,27 +13,18 @@
    			width: 100vw;
    			position:fixed;
    			z-index: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
    		}
    		.preloader img{
-   			position: absolute;
-   			margin: 0 auto;
    			height: 50vh;
-   			top: 50%;
-   			left: 50%;
-   			transform: translate(-50%, -50%);
-   		}	
-   		@media(max-width: 576px){
-   			.preloader img{
-	   			height: 30rem;
-	   			width: 20rem;
-	   			transform: translate(-100%, 70%);
-   			}
    		}
    	</style>
   </head>
   <body>
   	<div class="preloader" id="preloader">
-  			<img src="img/preloader.gif">
+  			<img src="img/preloader.gif" alt="preloader">
   	</div>
 	  <main class="main">
 	  	<div class="container">
@@ -75,9 +66,9 @@
 	  					<div class="main-form wow fadeInRight" data-wow-delay="1.1s">
 	  						<h2 class="main-form-header">To calculate the exact cost<br>order <strong>the trip of the meter</strong></h2>
 	  						<form class="form" action="#">
-	  							<label for="#name">Your name</label>
+	  							<label>Your name</label>
 	  							<input class="form-input" required id="name" type="text"> 
-	  							<label for="#phone">Your phone</label>
+	  							<label>Your phone</label>
 	  							<input class="form-input" required id="phone" type="text"> 
 	  							<button class="form-btn button" type="submit">leave the application</button>
 	  							<small>Gift on order day</small>
