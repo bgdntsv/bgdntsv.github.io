@@ -1,12 +1,12 @@
 <?php
 
-/* https://api.telegram.org/bot1861822735:AAFai6XWTxIY92EhMapLfHyu9Sy7GHojsB0/getUpdates */
+/* https://api.telegram.org/bot1795992065:AAEGXy58myKFHO2kakvOeNbTKJCTdvBarxQ/getUpdates */
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-$token = "1861822735:AAFai6XWTxIY92EhMapLfHyu9Sy7GHojsB0";
-$chat_id = "696526705";
+$token = "1795992065:AAEGXy58myKFHO2kakvOeNbTKJCTdvBarxQ";
+$chat_id = "-522905679";
 $arr = array(
   'Имя заказчика: ' => $name,
   'Телефон: ' => $phone,
