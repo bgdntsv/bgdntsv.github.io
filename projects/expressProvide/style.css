@@ -322,6 +322,32 @@ header .right .bottom .socials img {
   margin: 0 auto;
   height: 360px;
 }
+.partners {
+  padding-bottom: 5rem;
+}
+.partners .title {
+  margin-bottom: 3.5rem;
+}
+.partners-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.partners-items .partners-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  width: 33%;
+}
+.partners-items .partners-item img {
+  width: 100%;
+  max-height: 110px;
+}
+.partners-items .partners-item p {
+  font-size: 30px;
+  font-family: "Montserrat Bold", serif;
+}
 footer {
   background: rgba(146, 75, 31, 0.8);
   padding: 1rem 4rem 3rem;
@@ -434,9 +460,14 @@ footer .socials span img {
   .title {
     text-align: center;
     margin-bottom: 3rem;
+    font-size: 40px;
   }
   section {
     width: 95%;
+  }
+  header {
+    background: none;
+    height: 95vh;
   }
   header .left {
     width: 100%;
@@ -447,8 +478,56 @@ footer .socials span img {
   header .left .logo .white {
     display: none;
   }
+  header .right .top {
+    position: relative;
+  }
+  header .right .top:after {
+    content: "";
+    background: center / cover url(img/header-img.jpg) no-repeat;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  header .right .top .text .main-text {
+    padding: 0;
+    text-align: center;
+  }
+  header .right .top .text .main-text h1 {
+    color: #562202;
+  }
+  header .right .top .text .main-text p {
+    padding: 1rem;
+    color: #562202;
+  }
   header .right .top .navs {
     display: none;
+  }
+  .about .about-block .text {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .map {
+    align-items: center;
+  }
+  .map .text .list ul {
+    padding-left: 1rem;
+    margin: 0;
+  }
+  .partners {
+    padding-bottom: 4rem;
+  }
+  .partners-items {
+    flex-direction: column;
+  }
+  .partners-items .partners-item {
+    width: 80%;
+  }
+  .partners .title {
+    margin-bottom: 3rem;
   }
   footer {
     padding: 0 1rem 2rem;

@@ -349,6 +349,32 @@ header{
     }
   }
 }
+.partners{
+  padding-bottom: 5rem;
+  .title{
+    margin-bottom: 3.5rem;
+  }
+  &-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .partners-item{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem;
+      width: 33%;
+      img{
+        width: 100%;
+        max-height: 110px;
+      }
+      p{
+        font-size: 30px;
+        font-family: "Montserrat Bold", serif;
+      }
+    }
+  }
+}
 footer {
   background: @color-brown;
   padding: 1rem 4rem 3rem;
@@ -412,7 +438,6 @@ footer {
     }
   }
 }
-
 @media (max-width: 992px) {
   section {
     width: 90%;
@@ -477,16 +502,18 @@ footer {
     padding: 1rem 2rem 3rem;
   }
 }
-
 @media (max-width: 768px) {
   .title{
     text-align: center;
     margin-bottom: 3rem;
+    font-size: 40px;
   }
   section {
     width: 95%;
   }
   header{
+    background: none;
+    height: 95vh;
     .left{
       width: 100%;
       .logo{
@@ -500,10 +527,60 @@ footer {
     }
     .right{
       .top{
+        position: relative;
+        &:after{
+          content: "";
+          background: center/cover url(img/header-img.jpg) no-repeat;
+          opacity: 0.6;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          z-index: -1;
+        }
+        .text {
+          .main-text {
+            padding: 0;
+            text-align: center;
+            h1 {
+              color: #562202;
+            }
+            p{
+              padding: 1rem;
+              color: #562202;
+            }
+          }
+        }
         .navs{
           display: none;
         }
       }
+    }
+  }
+  .about .about-block .text{
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .map {
+    align-items: center;
+    .text .list {
+      ul {
+        padding-left: 1rem;
+        margin: 0;
+      }
+    }
+  }
+  .partners{
+    padding-bottom: 4rem;
+    &-items{
+      flex-direction: column;
+      .partners-item{
+        width: 80%;
+      }
+    }
+    .title{
+      margin-bottom: 3rem;
     }
   }
   footer{
