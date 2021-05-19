@@ -398,6 +398,7 @@ header .header-nav .main-menu li .active {
 }
 .projects .top-item img {
   width: 48%;
+  height: 100%;
 }
 .projects .bottom-item {
   height: 220px;
