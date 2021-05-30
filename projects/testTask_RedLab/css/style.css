@@ -215,6 +215,8 @@ header .number_time span {
   margin: 0 1rem;
 }
 .banner {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -315,7 +317,7 @@ header .number_time span {
   font-weight: 400;
 }
 .how .text p {
-  width: 415px;
+  max-width: 415px;
 }
 .how img {
   width: 100%;
