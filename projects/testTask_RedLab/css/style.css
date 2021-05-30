@@ -215,8 +215,6 @@ header .number_time span {
   margin: 0 1rem;
 }
 .banner {
-  margin: 0;
-  padding: 0;
   height: 100vh;
   width: 100%;
   display: flex;
