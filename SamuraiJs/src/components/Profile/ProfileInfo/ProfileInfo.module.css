@@ -1,0 +1,33 @@
+.wallpapers {
+  width: 100%;
+}
+.profileInfo {
+  position: relative;
+  padding: 1rem;
+  min-height: 200px;
+}
+.profileInfo .avatar {
+  display: inline-block;
+}
+.profileInfo .avatar img {
+  width: 200px;
+  border-radius: 50%;
+}
+.profileInfo .description {
+  position: absolute;
+  margin-left: 2rem;
+  display: inline-block;
+  top: 0;
+}
+.profileInfo .description h2 {
+  font-family: Castellar, sans-serif;
+}
+.profileInfo .description h4 {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  color: #554d58;
+}
+.profileInfo .description h4 span {
+  color: whitesmoke;
+}
+/*# sourceMappingURL=ProfileInfo.module.css.map */
