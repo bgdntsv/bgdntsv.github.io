@@ -1,0 +1,16 @@
+.messages{
+    background-color: white;
+    position: relative;
+    padding: 1rem 1rem 3.4rem;
+}
+.messagesList{
+    height: 70vh;
+    overflow: auto;
+    bottom: 0;
+}
+.messagesList::-webkit-scrollbar {
+    width: 0;
+}
+.messagesListItems{
+    bottom: 0;
+}
