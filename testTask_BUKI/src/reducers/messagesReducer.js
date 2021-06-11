@@ -1,6 +1,8 @@
 const GET_MESSAGES = 'GET_MESSAGES'
 const USERS_IS_GETTING = 'USERS_IS_GETTING'
 const ADD_MESSAGE = 'ADD_MESSAGE'
+const DELETE_MESSAGE = 'DELETE_MESSAGE'
+const EDIT_MESSAGE = 'EDIT_MESSAGE'
 
 let initialState = {
     messages: [],
@@ -24,6 +26,10 @@ const messagesReducer = (state = initialState, action) => {
         case ADD_MESSAGE:
             let newMessage = action.newMessage
             return {...state, messages: [...state.messages, newMessage]}
+        case EDIT_MESSAGE:
+            return {...state, messages: [...state.messages ]}
+        case DELETE_MESSAGE:
+            return {...state, messages: [state.messages.filter(el=>el.id!==action.id)]}
         default:
             return state
     }
@@ -32,6 +38,7 @@ export default messagesReducer
 const getMessagesAction = (messages, countUsers, lastData) => ({type: GET_MESSAGES, messages, countUsers, lastData})
 const isFetching = (fetching) => ({type: USERS_IS_GETTING, fetching})
 const addMessageAction = (newMessage) => ({type: ADD_MESSAGE, newMessage})
+const deleteMessageAction = (id) => ({type:DELETE_MESSAGE,id})
 
 export const getMessages = () => async (dispatch) => {
     dispatch(isFetching(true))
@@ -44,4 +51,7 @@ export const getMessages = () => async (dispatch) => {
 }
 export const addMessage = (newMessage) => (dispatch) => {
     dispatch(addMessageAction(newMessage))
+}
+export const deleteMessage = (id) => (dispatch) =>{
+    dispatch(deleteMessageAction(id))
 }

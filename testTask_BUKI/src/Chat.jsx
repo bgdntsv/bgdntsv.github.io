@@ -15,7 +15,6 @@ class Chat extends Component {
         return (
             <div className={s.chat}>
                 <Header lastData={this.props.lastMessage} countMessages={this.props.messagesCount} countUsers={this.props.usersCount}/>
-                {/*<img src={loader} alt=""/> :*/}
                 <Messages addMessage={this.props.addMessage} isFetching={this.props.isGettingMessages} messages={this.props.messages}/>
             </div>
         )

@@ -15,6 +15,8 @@ const Message = ({ava, date, name, messageText}) =>{
         </div>
         <p className={s.date}>{date}</p>
         <button className={s.like} onClick={clickLike}><img src={like?heartFill:heart} alt="&heart;"/></button>
+        <button className={s.delete} onClick={clickLike}>&times;</button>
+        <button className={s.edit} onClick={clickLike}><img src={like?heartFill:heart} alt="&heart;"/></button>
 
     </div>
 }
